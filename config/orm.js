@@ -16,17 +16,17 @@ var connection = require("../config/connection.js");
 var orm = {
     selectAll: function(cb) {
         connection.query('SELECT * FROM burgers', function(err, result) {
-            if (err) {
-                throw err;
-            }
+//            if (err) {
+//                throw err;
+//            }
             cb(result);
         });
     },
     insertOne: function(burger, cb) {
         connection.query('INSERT INTO burgers SET ?', burger, function(err, result) {
-            if (err) {
-                throw err;
-            }
+            // if (err) {
+            //     throw err;
+            // }
 
             cb(result);
         });
@@ -34,9 +34,9 @@ var orm = {
     // An example of objColVals would be {name: panther, sleepy: true}
     updateOne: function(id, cb) {
         connection.query('UPDATE burgers SET devoured = true WHERE id = ?', [id], function(err, result) {
-            if (err) {
-                throw err;
-            }
+            // if (err) {
+            //     throw err;
+            // }
 
             cb(result);
         });
