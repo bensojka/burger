@@ -1,7 +1,5 @@
 ### Schema
-DROP DATABASE IF EXISTS burgers_db;
-CREATE DATABASE burgers_db;
-USE burgers_db;
+USE fgyulbyawgh0jhj2;
 
 CREATE TABLE burgers
 (
